@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-picker-controller></ion-picker-controller>
+  <ion-button (click)="openPicker()">Open Single Column Picker</ion-button>
+  <ion-button (click)="openPicker(2, 5, multiColumnOptions)">Open Multi Column Picker</ion-button>
+</ion-content>
