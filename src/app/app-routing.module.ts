@@ -48,6 +48,18 @@ const routes: Routes = [
     path: 'inputs',
     loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
   },
+  {
+    path: 'area',
+    loadChildren: () => import('./pages/area/area.module').then( m => m.AreaPageModule)
+  },
+  {
+    path: 'items',
+    loadChildren: () => import('./pages/items/items.module').then( m => m.ItemsPageModule)
+  },
+  {
+    path: 'item-divider',
+    loadChildren: () => import('./pages/item-divider/item-divider.module').then( m => m.ItemDividerPageModule)
+  },
 ];
 
 @NgModule({
